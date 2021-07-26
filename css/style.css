@@ -1,0 +1,368 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #D6BCA3;
+}
+
+div.company-header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+div.company-header h1 {
+  color: #700414;
+  font-size: 50px;
+}
+
+div.company-header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  border-radius: 5%;
+  margin-bottom: 3em;
+  -webkit-box-shadow: -2px -2px 5px black, 2px 2px 5px black;
+          box-shadow: -2px -2px 5px black, 2px 2px 5px black;
+}
+
+div.company-header span {
+  background: -webkit-gradient(linear, left bottom, right top, from(#700414), color-stop(bisque), to(white));
+  background: linear-gradient(to top right, #700414, bisque, white);
+  border: 1px solid #700414;
+  border-radius: 50%;
+  padding: 1.5px;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px black;
+}
+
+div.company-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #46373B;
+  font-size: 18px;
+  width: 425px;
+  margin: auto;
+}
+
+div.company-menu span.note {
+  color: #700414;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px white;
+}
+
+div.company-menu h2 {
+  color: #700414;
+  font-size: 40px;
+  border-radius: 40%;
+  margin: 0;
+}
+
+div.company-menu .prices-smlg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 8em 1em 8em;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+div.company-menu .prices {
+  display: -ms-grid;
+  display: grid;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+div.company-menu .tea-note {
+  color: #46373B;
+  font-weight: 600;
+  font-size: 15px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+div.company-menu .tea-prices {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+div.company-menu div.coffee-container {
+  background: bisque;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+div.company-menu div.coffee-container div.coffee-info {
+  background: #ffd4988f;
+  color: #46373B;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+div.company-menu div.espresso-container {
+  background: bisque;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+div.company-menu div.espresso-container div.espresso-info {
+  background: #ffd4988f;
+  color: #46373B;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+div.company-menu div.tea-container {
+  background: bisque;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+div.company-menu div.tea-container div.tea-info {
+  background: #ffd4988f;
+  color: #46373B;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+div.company-menu div.tea-container a {
+  text-decoration: none;
+  color: #46373B;
+}
+
+div.company-menu div.bakery-container {
+  background: bisque;
+  padding: 1em 1em 0.5em 1em;
+  margin: 1em;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+div.company-menu div.bakery-container div.bakery-info {
+  background: #ffd4988f;
+  color: #46373B;
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 50%;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+div.company-menu dl {
+  display: block;
+}
+
+div.company-menu dl dt {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.company-menu dl .description {
+  font-style: italic;
+  margin: -1em 5em 1em 5em;
+}
+
+a[data-tool-tip] {
+  position: relative;
+}
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: white;
+  color: #700414;
+  font-size: 12px;
+  width: 13em;
+  border: 2px solid #700414;
+  border-radius: 50%;
+  padding: 1em;
+  margin-left: 10em;
+  margin-top: -2em;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: margin-left ease-out 150ms, margin-top ease-out 150ms, -webkit-transform ease-out 150ms;
+  transition: margin-left ease-out 150ms, margin-top ease-out 150ms, -webkit-transform ease-out 150ms;
+  transition: transform ease-out 150ms, margin-left ease-out 150ms, margin-top ease-out 150ms;
+  transition: transform ease-out 150ms, margin-left ease-out 150ms, margin-top ease-out 150ms, -webkit-transform ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  margin-left: 18.5em;
+  margin-top: -2em;
+}
+
+div.company-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  background: #46373B;
+  opacity: 85%;
+  color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1em;
+}
+
+div.company-info .company-address {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+div.company-info .company-address p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.company-info .company-address a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+div.company-info .hours {
+  display: block;
+  background: #5f5255;
+  padding: .5em;
+  border-radius: 10%;
+}
+
+@media only screen and (min-width: 1098px) {
+  div.company-header {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  div.company-header img {
+    width: 600px;
+    border-radius: 5%;
+    margin-bottom: 0;
+    -webkit-box-shadow: -2px -2px 5px black, 2px 2px 5px black;
+            box-shadow: -2px -2px 5px black, 2px 2px 5px black;
+  }
+  div.company-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1080px;
+    margin: 3em auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  div.company-menu .coffee-container {
+    width: 450px;
+    margin: 0;
+  }
+  div.company-menu .espresso-container {
+    width: 450px;
+    margin: 0;
+  }
+  div.company-menu .tea-container {
+    width: 450px;
+    margin: 0;
+  }
+  div.company-menu .bakery-container {
+    width: 450px;
+    margin: 0;
+  }
+  div.company-menu .tea-note {
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 0;
+  }
+  div.company-menu .tea-prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    line-height: 0;
+  }
+  div.company-menu .prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  a[data-tool-tip]::after {
+    line-height: 1em;
+    margin-left: 1em;
+  }
+  a[data-tool-tip]:hover::after {
+    margin-left: 23em;
+    margin-top: -3em;
+  }
+}
+
+.gotop-btn {
+  position: fixed;
+  display: block;
+  z-index: 999;
+  text-align: center;
+  text-decoration: none;
+  background: #46373B;
+  opacity: 50%;
+  color: white;
+  right: 5px;
+  bottom: 5px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  padding: .2em;
+}
+/*# sourceMappingURL=style.css.map */

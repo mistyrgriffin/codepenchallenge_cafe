@@ -1,0 +1,335 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #D6BCA3;
+}
+
+div.company-header {
+    display: grid;
+    place-items: center;
+    width: 100%;
+
+    h1 {
+        color: #700414;
+        font-size: 50px;
+    }
+    
+    img {
+        display: flex;
+        width: 450px;
+        border-radius: 5%;
+        margin-bottom: 3em;
+        box-shadow: -2px -2px 5px black,
+                    2px 2px 5px black;
+    }
+
+    span {
+        background: linear-gradient(to top right, #700414, bisque, white);
+	    border: 1px solid #700414;
+	    border-radius: 50%;
+	    padding: 1.5px;
+	    font-weight: 900;
+	    text-shadow: 2px 2px 5px black;
+    }
+}
+
+div.company-menu {
+    align-items: center;
+    text-align: center;
+    color: #46373B;
+    font-size: 18px;
+    width: 425px;
+    margin: auto;
+
+    span.note {
+        color: #700414;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px white;
+    }
+
+    h2 {
+        color:  #700414;
+        font-size: 40px;
+        border-radius: 40%;
+        margin: 0;
+    }
+
+    .prices-smlg {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 8em 1em 8em;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .prices {
+        display: grid;
+        font-weight: 600;
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .tea-note {
+        color: #46373B;
+        font-weight: 600;
+        font-size: 15px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .tea-prices {
+        background: white;
+        display: grid;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    div.coffee-container {
+        background: bisque;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px black;
+
+        div.coffee-info {
+            background: #ffd4988f;
+            color: #46373B;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            width: 100%;
+            margin: auto;
+            padding: 1em 0;
+        }
+    }
+
+    div.espresso-container {
+        background: bisque;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px black;
+
+        div.espresso-info {
+            background: #ffd4988f;
+            color: #46373B;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            width: 100%;
+            margin: auto;
+            padding: 1em 0;
+        }
+    }
+
+    div.tea-container {
+        background: bisque;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px black;
+
+        div.tea-info {
+            background: #ffd4988f;
+            color: #46373B;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            width: 100%;
+            margin: auto;
+            padding: 1em 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #46373B;
+        }
+    }
+
+    div.bakery-container {
+        background: bisque;
+        padding: 1em 1em 0.5em 1em;
+        margin: 1em;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px black;
+
+        div.bakery-info {
+            background: #ffd4988f;
+            color: #46373B;
+            border-top-left-radius: 35%;
+            border-bottom-right-radius: 50%;
+            width: 100%;
+            margin: auto;
+            padding: 1em 0;
+        }
+    }
+
+    dl {
+        display: block;
+
+        dt {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    
+        .description {
+            font-style: italic;
+            margin: -1em 5em 1em 5em;
+        }
+    }
+}
+
+a[data-tool-tip] {
+    position: relative;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: #700414;
+    font-size: 12px;
+    width: 13em;
+    border: 2px solid #700414;
+    border-radius: 50%;
+    padding: 1em;
+    margin-left: 10em;
+    margin-top: -2em;
+    transform: scale(0);
+    transition: transform ease-out 150ms,
+                margin-left ease-out 150ms,
+                margin-top ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+    transform: scale(1);
+    margin-left: 18.5em;
+    margin-top: -2em;
+}
+
+div.company-info {
+    display: flex;
+    place-items: center;
+    background: #46373B;
+    opacity: 85%;
+    color: white;
+    justify-content: space-evenly;
+    padding: 1em;
+
+    .company-address {
+        display: grid;
+        place-items:center;
+
+        p {
+            display: flex;
+        }
+    
+        a {
+            display: flex;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .hours {
+        display: block;
+        background: #5f5255;
+        padding: .5em;
+        border-radius: 10%;
+    }
+}
+
+@media only screen and (min-width: 1098px) {
+
+    div.company-header {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        
+        img {
+            width: 600px;
+            border-radius: 5%;
+            margin-bottom: 0;
+            box-shadow: -2px -2px 5px black,
+                        2px 2px 5px black;
+        }
+    }
+
+    div.company-menu {
+        display: flex;
+        width: 1080px;
+        margin: 3em auto;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .coffee-container {
+            width: 450px;
+            margin: 0;
+        }
+
+        .espresso-container {
+            width: 450px;
+            margin: 0;
+        }
+
+        .tea-container {
+            width: 450px;
+            margin: 0;
+        }
+
+        .bakery-container {
+            width: 450px;
+            margin: 0;
+        }
+
+        .tea-note {
+            width: 100%;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 0;
+        }    
+
+        .tea-prices {
+            display: flex;
+            font-weight: 600;
+            font-size: 15px;
+            justify-content: space-evenly;
+            line-height: 0;
+        }
+
+        .prices {
+            display: flex;
+            justify-content: space-evenly;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 0;
+        }
+    }
+
+    a[data-tool-tip]::after {
+        line-height: 1em;
+        margin-left: 1em;
+    }
+
+    a[data-tool-tip]:hover::after {
+        margin-left: 23em;
+        margin-top: -3em;
+    }
+}
+
+.gotop-btn {
+    position: fixed;
+    display: block;
+    z-index: 999;
+    text-align: center;
+    text-decoration: none;
+    background: #46373B;
+    opacity: 50%;
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    transition-duration: 500ms;
+    padding: .2em;
+}
